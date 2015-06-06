@@ -1,5 +1,5 @@
 /*
- * @# bitType.h 2011-10-19
+ * @# bitType.h
  **/
 #ifndef BITTYPE_H_
 #define BITTYPE_H_
