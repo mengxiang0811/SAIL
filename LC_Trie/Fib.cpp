@@ -1,10 +1,3 @@
-/*
- * Fib.cpp
- *
- *  Created on: 2011-4-6
- *      Author: root
- */
-
 #include "Fib.h"
 #include <iostream>
 #include <math.h>

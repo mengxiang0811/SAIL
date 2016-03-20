@@ -1,10 +1,5 @@
 /*
 * Fib.cpp
-*
-*  Created on: 2011-4-6
-*      Author: root
-*	Updated on: 2014-4-18
-*		By Qiaobin Fu
 */
 
 #include "Fib.h"
@@ -732,7 +727,7 @@ void CFib::Update(int insertport, char *insert_C, int operation_type, char* spre
 	bool IfNewBornNode = false;
 	bool ifSubTrieUpdate = false;
 	//look up the location of the current node
-	for (int i=0;i< prefixLen; i++)	//0.0.0.0/0��if len is 0, it is root node.
+	for (int i=0;i< prefixLen; i++)	//0.0.0.0/0£»if len is 0, it is root node.
 	{
 		memory_access ++;
 
@@ -940,7 +935,7 @@ void CFib::Update(int insertport, char *insert_C, int operation_type, char* spre
 				memcpy(&levelTable32->nexthop[chunkUpdate32[0].chunk_id << 8], chunkUpdate32[0].nexthop, sizeof(chunkUpdate32[0].nexthop));
 			}
 		}
-		else if (IsLeaf(insertNode) && (insertNode->nodeLevel == 16 || insertNode->nodeLevel == 24 || insertNode->nodeLevel == 32))  {//Ҷ�ӽڵ�
+		else if (IsLeaf(insertNode) && (insertNode->nodeLevel == 16 || insertNode->nodeLevel == 24 || insertNode->nodeLevel == 32))  {//Ò¶×Ó½Úµã
 			updateNumber = 1;			// leaf node
 
 			if(insertNode->nodeLevel == 16) {
